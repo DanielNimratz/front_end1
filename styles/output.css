@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Nunito, serif;
+  background-color: #FEFFE9;
+  color: #2E3105;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 650;
+}
+
+h4 {
+  font-size: 27px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  color: #FEFFE9;
+  padding: 10px 0;
+  background-image: url("main.webp");
+  background-size: cover;
+}
+
+nav {
+  display: flex; /* Use flexbox */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add padding to space out the links */
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+#about .container {
+  text-align: center;
+}
+
+#signup > .container {
+  display: grid;
+  grid-template-areas: "image header" "image par" "image button";
+  gap: 50px;
+  padding: 10px;
+}
+
+#contact > .container {
+  display: grid;
+  grid-template-areas: "header image" "par image" "button image";
+  gap: 50px;
+  padding: 10px;
+}
+
+img {
+  max-width: 800px;
+}
+
+.gr_cl1, .gr_cl2 {
+  grid-area: image;
+  /*min-width: 30px;*/
+}
+
+.gr_h1, .gr_h2 {
+  grid-area: header;
+}
+
+.gr_p1, .gr_p2 {
+  grid-area: par;
+}
+
+.gr_b1 > button, .gr_b2 > button {
+  grid-area: button;
+  border-color: #DFE777;
+}
+
+.gr_h1, .gr_b1, .gr_h2, .gr_b2 {
+  text-align: center;
+}
+
+#signup > .container > .button-52 {
+  color: #FEFFE9;
+  border-color: #2E3105;
+}
+
+#signup > .container > .button-52:after {
+  background-color: #2E3105;
+}
+
+#contact > .container > .button-52 {
+  color: #FEFFE9;
+  border-color: #2E3105;
+}
+
+#contact > .container > .button-52:after {
+  background-color: #2E3105;
+}
+
+nav h1 {
+  font-size: 24px;
+  margin: 3%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Use flexbox */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #FEFFE9;
+  text-decoration: none;
+}
+
+#events {
+  margin-bottom: 80px;
+}
+
+#events > .container {
+  text-align: center;
+}
+
+/* Section styles */
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #DFE777;
+  color: #2E3105;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid #FEFFE9;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index: 1;
+  margin: 35px;
+  /*color: #000;*/
+}
+
+.button-52:after {
+  content: "";
+  background-color: #DFE777;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+.main-site-button > h1 {
+  text-decoration: none;
+  font-size: 40px;
+  color: #FEFFE9;
+}
+
+/*# sourceMappingURL=output.css.map */
